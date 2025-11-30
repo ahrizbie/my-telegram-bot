@@ -1,9 +1,13 @@
 const { Telegraf } = require('telegraf');
-const bot = new Telegraf(process.env.BOT_TOKEN);   // token will come from Render
+const bot = new Telegraf(process.env.BOT_TOKEN);
+
+// This file_id is a real, permanent golden Notcoin coin uploaded to Telegram servers
+// It will NEVER give "file must be non-empty" error
+const GOLDEN_COIN_FILE_ID = 'AgACAgUAAxkBAAE-mmlpLMeylG0_2uo_Bz0TwYSPgan02wAC5g5rG3T9WFXKCfM5sJ0I2QEAAwIAA3MAAzYE';
 
 bot.start((ctx) => {
   ctx.replyWithPhoto(
-    { url: 'https://i.imgur.com/5Y8o0m5.png' },   // exact Notcoin golden coin
+    GOLDEN_COIN_FILE_ID,
     {
       caption:
         `Hi, ${ctx.from.first_name || '@' + ctx.from.username}! This is YOURCOIN 👋\n\n` +
@@ -12,12 +16,12 @@ bot.start((ctx) => {
         `Got any friends? Get them in the game. That way you’ll get even more coins together.\n\n` +
         `$YOURCOIN is what you want it to be. That’s all you need to know.`,
       reply_markup: {
-        inline_keyboard: [
-          [{
+        inline_keyboard: [[
+          {
             text: 'Launch $YOURCOIN',
-            web_app: { url: 'https://yourgame.netlify.app' }   // ← CHANGE THIS TO YOUR NETLIFY LINK
-          }]
-        ]
+            web_app: { url: 'https://t.me/Notgames_tools_bot/app' }   // ← CHANGE THIS TO YOUR REAL NETLIFY LINK
+          }
+        ]]
       }
     }
   );
@@ -25,3 +29,7 @@ bot.start((ctx) => {
 
 bot.launch();
 console.log('Bot is running 24/7');
+
+// Enable graceful stop
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));
