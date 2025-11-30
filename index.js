@@ -11,17 +11,17 @@ bot.start((ctx) => {
     GOLDEN_COIN_FILE_ID,
     {
       caption:
-        `Hi, *${name}*\\! This is YOURCOIN\n\n` +
-        `Tap on the coin and watch your balance grow\\.\n\n` +
-        `How much is \\$YOURCOIN worth\\? No one knows, probably nothing\n\n` +
-        `Got any friends\\? Get them in the game\\. That way you'll get even more coins together\\.\n\n` +
-        `\\$YOURCOIN is what you want it to be\\. That’s all you need to know\\.`,
+        `Hello *${username}*\\! Welcome To Not Tools\n\n` +
+        `Analyze everythings about Notgames\\.\n\n` +
+        `This is probably nothing\n\n` +
+        `Nothing Beliver\\? Stay tuned with \\@notgames_tools That way you'll know even more Nothing\\.\n\n` +
+        `Notgamer is what you want to be\\? here you will get Nothing or Everything \\.`,
       parse_mode: 'MarkdownV2',
       reply_markup: {
         inline_keyboard: [
           [
             {
-              text: 'Launch \\$YOURCOIN',
+              text: 'Open Tools',
               url: 'https://t.me/Notgames_tools_bot/app'   // ← THIS WORKS 100%
             }
           ]
