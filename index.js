@@ -11,7 +11,7 @@ bot.start((ctx) => {
     GOLDEN_COIN_FILE_ID,
     {
       caption:
-        `Hello *${username}*\\! Welcome To Not Tools\n\n` +
+        `Hello *${name}*\\! Welcome To Not Tools\n\n` +
         `Analyze everythings about Notgames\\.\n\n` +
         `This is probably nothing\n\n` +
         `Nothing Beliver\\? Stay tuned with \\@notgames_tools That way you'll know even more Nothing\\.\n\n` +
