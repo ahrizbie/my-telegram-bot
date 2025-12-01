@@ -14,7 +14,7 @@ bot.start((ctx) => {
         `Hello *${name}*\\! Welcome To Not Tools\n\n` +
         `Analyze everythings about Notgames\\.\n\n` +
         `This is probably nothing\n\n` +
-        `Nothing Beliver\\? Stay tuned with \\@notgames_tools That way you'll know even more Nothing\\.\n\n` +
+        `Nothing Beliver\\? Stay tuned with us \\! That way you'll know even more Nothing\\.\n\n` +
         `Notgamer is what you want to be\\? here you will get Nothing or Everything \\.`,
       parse_mode: 'MarkdownV2',
       reply_markup: {
