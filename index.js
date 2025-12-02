@@ -13,17 +13,17 @@ bot.start((ctx) => {
     GOLDEN_COIN_FILE_ID,
     {
       caption:
-        `Hey *${escapedName}* 👋✦ Welcome To *Not Tools* 🔥\n\n` +
-        `Analyze everything about Notgames here 🧠💎\n\n` +
-        `This is probably nothing 😏\n\n` +
-        `Nothing Believer? Stay tuned with us 🚪 That way you'll know even more *Nothing* 😉\n\n` +
-        `Notgamer is what you want to be? Here you will get *Nothing* or *Everything* 🌟`,
+        `Hey *${escapedName}* Welcome To *Not Games Tools*! \n\n` +
+        `Analyze everything about Notgames here. \n\n` +
+        `This is not just *Analytics Tools*! This is *Probably Nothing*.\n` +
+        `*The beginning of the great gaming revolution*.\n\n` +
+        `Not a Gamer? Then be a Notgamer! Stay tuned with us mate! That way, you'll know even more *Nothing*.`,
       parse_mode: 'MarkdownV2',
       reply_markup: {
         inline_keyboard: [
-          [{ text: '🛠 Open Tools', url: 'https://t.me/Notgames_tools_bot/app' }],
-          [{ text: '📢 Open Channel', url: 'https://t.me/notgames_tools' }],
-          [{ text: '✖ Open X (Twitter)', url: 'https://x.com/hitoku_tg' }]  // change if different
+          [{ text: 'Open Tools', url: 'https://t.me/Notgames_tools_bot/app' }],
+          [{ text: 'Subscribe Channel', url: 'https://t.me/notgames_tools' }],
+          [{ text: 'Follow on X', url: 'https://x.com/hitoku_tg' }]  // change if different
         ]
       }
     }
